@@ -14,7 +14,5 @@ CREATE TABLE location (
         CHECK (latitude BETWEEN -90 AND 90),
 
     CONSTRAINT chk_location_longitude
-        CHECK (longitude BETWEEN -180 AND 180),
-
-    INDEX idx_location_house_id (house_id)
+        CHECK (longitude BETWEEN -180 AND 180)
 );
